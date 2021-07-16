@@ -2,6 +2,10 @@
 
 This is an example that shows how to create an [Amazon EKS](https://aws.amazon.com/eks/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&eks-blogs.sort-by=item.additionalFields.createdDate&eks-blogs.sort-order=desc) cluster with [AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html) in [Terraform](https://github.com/hashicorp/terraform)
 
+## Prerequisites
+
+You have to have a valid AWS account and the [AWS cli configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
+
 ## Installation
 
 1. `terraform init`
@@ -12,4 +16,4 @@ This is an example that shows how to create an [Amazon EKS](https://aws.amazon.c
 ## Deploy game 2048 to the new cluster
 
 1. Run `kubectl apply -f ./game-2048.yaml`
-2. Check if the ingress is successfully created `k get ingress ingress-2048 -n game-2048`, there should be an address assigned
+2. Check if the ingress is successfully created `kubectl get ingress ingress-2048 -n game-2048`, there should be an address assigned
