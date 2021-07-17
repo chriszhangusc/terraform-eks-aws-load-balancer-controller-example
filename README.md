@@ -16,4 +16,4 @@ You have to have a valid AWS account and the [AWS cli configured](https://docs.a
 ## Deploy game 2048 to the new cluster
 
 1. Run `kubectl apply -f ./game-2048.yaml`
-2. Check if the ingress is successfully created `kubectl get ingress ingress-2048 -n game-2048`, there should be an address assigned
+2. Check if the Ingress or AWS Load Balancer is successfully created `kubectl get ingress ingress-2048 -n game-2048`, there should be an address assigned.
