@@ -39,7 +39,7 @@ resource "aws_iam_role" "this" {
 }
 
 resource "aws_iam_role_policy_attachment" "this" {
-  policy_arn = aws_iam_policy.this.arn
+  policy_arn = aws_iam_policy.aws_load_balancer_controller_policy.arn
   role       = aws_iam_role.this.name
 }
 
