@@ -1,5 +1,0 @@
-variable "cluster" {
-}
-
-variable "kubeconfig" {
-}

@@ -59,8 +59,9 @@ module "cluster" {
   subnets      = module.network.private_subnets
 }
 
-module "load_balancer_controller" {
-  source     = "./modules/aws_load_balancer_controller"
+module "aws_load_balancer_controller" {
+  source     = "chriszhangusc/load-balancer-controller/aws"
+  version    = "1.0.0"
   cluster    = module.cluster.cluster
   kubeconfig = module.cluster.kubeconfig
 }
