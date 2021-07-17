@@ -1,4 +1,4 @@
-resource "aws_iam_policy" "this" {
+resource "aws_iam_policy" "aws_load_balancer_controller_policy" {
   name        = "AWSLoadBalancerControllerIAMPolicy"
   path        = "/"
   description = "AWS LoadBalancer Controller IAM Policy"
